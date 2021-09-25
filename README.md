@@ -2,17 +2,17 @@
 
 only below category goods supported till now
 
-food:
+^^food:
     potato chips,bread,chicken
     
-cloth:
+^^cloth:
     shirt,shoe,pants
     
-stationery:
+^^stationery:
     book,pencil,pen
 
-
-procedure to test:
+*********
+Procedure to test:
 
 download the code and run in local
 
