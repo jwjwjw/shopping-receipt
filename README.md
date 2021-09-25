@@ -4,8 +4,10 @@ only below category goods supported till now
 
 food:
     potato chips,bread,chicken
+    
 cloth:
     shirt,shoe,pants
+    
 stationery:
     book,pencil,pen
 
@@ -30,6 +32,7 @@ or console output:
 
 2:
 test with postman
+
 ![image](https://user-images.githubusercontent.com/22140333/134768039-c255cdf8-16aa-40f3-8c75-4cf59fcfc35e.png)
 
 
