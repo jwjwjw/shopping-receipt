@@ -1,0 +1,26 @@
+server:
+  servlet:
+    context-path: /test
+  port: 6001
+
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: TRACE
+        web: DEBUG
+  pattern:
+    console: '%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n'
+
+food:
+  potato chips,bread,chicken
+cloth:
+  shirt,shoe,pants
+stationery:
+  book,pencil,pen
+
+tax:
+  CA:  0.0975
+  NY:  0.08875
