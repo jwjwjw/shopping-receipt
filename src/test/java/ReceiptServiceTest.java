@@ -141,4 +141,18 @@ public class ReceiptServiceTest {
         this.service.getReceipt(request);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testParameter3() {
+        RequestDTO request = new RequestDTO();
+        request.setLocation("CAa");
+
+        ProductDTO product = new ProductDTO();
+        product.setPrice(new BigDecimal(10.00));
+        product.setQuantity(10);
+
+        request.setProductList(Collections.singletonList(product));
+
+        this.service.getReceipt(request);
+    }
+
 }

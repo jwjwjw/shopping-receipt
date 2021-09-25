@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "cf36e1f9-d08f-4f62-ba47-93c67d0084e0",
+		"name": "shoppingReceipt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testcase1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"location\": \"CA\",\r\n  \"productList\": [\r\n    {\r\n      \"price\": 17.99,\r\n      \"productName\": \"book\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"price\": 3.99,\r\n      \"productName\": \"potato chips\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "http://localhost:6001/test/create"
+			},
+			"response": []
+		},
+		{
+			"name": "testcase2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"location\": \"NY\",\r\n  \"productList\": [\r\n    {\r\n      \"price\": 17.99,\r\n      \"productName\": \"book\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"price\": 2.99,\r\n      \"productName\": \"pencil\",\r\n      \"quantity\": 3\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "http://localhost:6001/test/create"
+			},
+			"response": []
+		},
+		{
+			"name": "testcase3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"location\": \"NY\",\r\n  \"productList\": [\r\n    {\r\n      \"price\": 2.99,\r\n      \"productName\": \"pencil\",\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"price\": 29.99,\r\n      \"productName\": \"shirt\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}"
+				},
+				"url": "http://localhost:6001/test/create"
+			},
+			"response": []
+		}
+	]
+}
